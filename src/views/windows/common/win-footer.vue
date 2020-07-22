@@ -9,7 +9,7 @@
         </li>
         <li class="item item-2">
           <div class="input">
-            <img width="25" height="25" src="../../../../static/img/win-footer/task.png" alt />
+            <img width="25" height="25" src="../../../../static/img/win-footer/search.png" alt />
             <input type="text" placeholder="在这里输入你要搜索的内容"/>
        
           </div>
@@ -27,7 +27,7 @@
     </div>
     <div class="right">
       <div class="img-icon">
-        <img width="25" height="25" src="../../../../static/img/win-footer/win.png" alt />
+        <img width="25" height="25" src="../../../../static/img/win-footer/task.png" alt />
       </div>
       <div class="time">
         <div class="time-hourse">{{daytime}}</div>
