@@ -10,21 +10,20 @@
         <li class="item item-2">
           <div class="input">
             <img width="25" height="25" src="../../../../static/img/win-footer/task.png" alt />
-            <input type="text" />
-            <img width="25" height="25" src="../../../../static/img/win-footer/task.png" alt />
+            <input type="text" placeholder="在这里输入你要搜索的内容"/>
+       
           </div>
         </li>
         <li class="item item-3">
           <div class="task-img">
-            <img width="25" height="25" src="../../../../static/img/win-footer/task.png" alt />
+            <img width="25" height="25" src="../../../../static/img/win-footer/cicry.png" alt />
           </div>
         </li>
       </ul>
     </div>
     <div class="content">
-
-        <!-- 待定 -->
-
+      <!-- 待定 -->
+   
     </div>
     <div class="right">
       <div class="img-icon">
@@ -45,7 +44,7 @@ export default {
   data() {
     return {
       daytime: "14:31:41",
-      daydate: "2020/7/22",
+      daydate: "",
       dict: [
         {
           icon: "test"
@@ -61,6 +60,21 @@ export default {
         }
       ]
     };
+  },
+  mounted() {
+    this.getdaydate();
+    this.getdattime()
+  },
+  methods: {
+    getdaydate() {
+      this.daydate = new Date().toLocaleDateString();
+      console.log(this.daydate)
+    },
+    getdattime(){
+      setInterval(() => {
+        this.daytime=new Date().toLocaleTimeString().slice(2)
+      }, 1000);
+    }
   }
 };
 </script>
